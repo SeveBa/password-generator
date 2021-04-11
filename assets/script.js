@@ -9,11 +9,79 @@ var length = prompt("type in the length of your desired password. must be betwee
     getpasswordLength()
   }
   return length 
+
+   // if password length is between 8 and 128 characters
+   if (promptgetpasswordLength < 8 || promptgetpasswordLength > 128) {
+    // confirm character length between 8 and 128 characters
+    var confirm = window.confirm("Character Length of password is between 8 and 128 characters?");
 }
 
 function getpasswordOptions(){
-  // Use confirms to individually ask upper case, lower case, numbes, special characters. These need to be stored as their own variables.
-  // If statement if all = false then run (alert) and function again. If all is
+  // Use confirms to individually ask upper case, lower case, numbers, special characters. These need to be stored as their own variables.
+  
+  // Upper case letter prompt
+  function getuppercaseLetter (){
+  var uppercase = prompt("choose a upper case letter")
+
+    if (// leter is not uppercase){
+      alert('must be a upper case letter!')
+      getuppercaseLetter
+    }
+    return uppercaseLetter
+
+    // if password has upper case letter
+    if (promptuppercaseLetter = uppercase) {
+    // confirm character input is upper case characters?
+    var confirm = window.confirm("is character upper case?");
+
+  // Lower case letter prompt
+  function getlowercaseLetter  
+  var lowercase = prompt("choose a lower case letter")
+
+    if (// leter is not lowercase){
+      alert('must be a lower case letter!')
+      getlowercaseLetter
+    }
+    return lowercaseLetter
+
+    // if password has lower case letter
+    if (promptlowercaseLetter = lowercase) {
+      // confirm character input is lower case characters?
+      var confirm = window.confirm("is character lower case?");
+
+  // Number prompt
+  function getNumber(){
+  var number = prompt("choose a number")
+  
+    if (// character is not a number){
+      alert('must be a number!')
+      getNumber
+    }
+    return number 
+
+    // if password has number
+    if (promptnumber = number) {
+      // confirm character input is number?
+      var confirm = window.confirm("is input a number?");
+
+  // special character prompt
+  function getspecialCharacter(){
+  var specialcharacter  = prompt("choose a special character")  
+  
+    if (// special character is not a special character)
+      alert('must be a special character!')
+      getspecialCharacter 
+    }
+    return special character 
+    
+    // if password has special character
+    if (promptspecialCharacter = specialcharacter) {
+      // confirm character input is special character?
+      var confirm = window.confirm("is input a special character?");
+}
+  // If statement if all = false then run (alert) and function again. If all is accepted, move to generate password.
+    if (getpasswordOptions)
+
   // Else, return options
 }
 
