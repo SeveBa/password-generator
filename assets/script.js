@@ -1,5 +1,17 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+// var generateBtn = document.querySelector("#generate");
+
+// uppercase character definition
+// var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N" "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+// lowercase charater definition
+// const lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+// number definition
+// const number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",];
+
+// special character definition
+// const specialCharacter = ["@", "#", "$", "%", "^", "&", "*", "_", "-", "/", "\", "!"];
 
 function getpasswordLength(){
 var length = prompt("type in the length of your desired password. must be between 8 and 128 characters")
@@ -15,6 +27,8 @@ var length = prompt("type in the length of your desired password. must be betwee
     // confirm character length between 8 and 128 characters
     var confirm = window.confirm("Character Length of password is between 8 and 128 characters?");
 }
+  console.log(getpasswordLength()) 
+
 
 function getpasswordOptions(){
   // Use confirms to individually ask upper case, lower case, numbers, special characters. These need to be stored as their own variables.
@@ -25,7 +39,7 @@ function getpasswordOptions(){
 
     if (// leter is not uppercase){
       alert('must be a upper case letter!')
-      getuppercaseLetter
+      getuppercaseLetter(){
     }
     return uppercaseLetter
 
@@ -35,12 +49,12 @@ function getpasswordOptions(){
     var confirm = window.confirm("is character upper case?");
 
   // Lower case letter prompt
-  function getlowercaseLetter  
+  function getlowercaseLetter(){  
   var lowercase = prompt("choose a lower case letter")
 
     if (// leter is not lowercase){
       alert('must be a lower case letter!')
-      getlowercaseLetter
+      getlowercaseLetter()
     }
     return lowercaseLetter
 
@@ -48,14 +62,15 @@ function getpasswordOptions(){
     if (promptlowercaseLetter = lowercase) {
       // confirm character input is lower case characters?
       var confirm = window.confirm("is character lower case?");
+    }
 
   // Number prompt
   function getNumber(){
   var number = prompt("choose a number")
   
     if (// character is not a number){
-      alert('must be a number!')
-      getNumber
+      alert('must be a number!'){
+      getNumber()
     }
     return number 
 
@@ -68,11 +83,11 @@ function getpasswordOptions(){
   function getspecialCharacter(){
   var specialcharacter  = prompt("choose a special character")  
   
-    if (// special character is not a special character)
-      alert('must be a special character!')
-      getspecialCharacter 
-    }
-    return special character 
+    // if (special character is not a special character)
+    //   alert('must be a special character!'){
+    //   getspecialCharacter() 
+    //   return specialcharacter 
+    // }
     
     // if password has special character
     if (promptspecialCharacter = specialcharacter) {
@@ -80,9 +95,22 @@ function getpasswordOptions(){
       var confirm = window.confirm("is input a special character?");
 }
   // If statement if all = false then run (alert) and function again. If all is accepted, move to generate password.
-    if (getpasswordOptions)
+    if (getpasswordOptions){
+      window.alert("password requirements have been accepted")
+      break;
+    }
+
+    else{
+    window.alert("password does not meet requirements")   
+    }
+    
 
   // Else, return options
+  // If false, run getpasswordLength function again
+  else {
+    getpasswordLength();
+    }
+
 }
 
 function generatePassword(){
