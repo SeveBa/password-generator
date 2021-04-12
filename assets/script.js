@@ -13,24 +13,23 @@
 // special character definition
 // const specialCharacter = ["@", "#", "$", "%", "^", "&", "*", "_", "-", "/", "\", "!"];
 
-function getpasswordLength(){
-var length = prompt("type in the length of your desired password. must be between 8 and 128 characters")
+// Generate password function
+function generatePassword(){}
+
+// Establish password length
+function passwordLength(){
+var length = alert("Type in the length of your desired password. Must be between 8 and 128 characters.")
+
 
   if (length < 8 || length > 128){
     alert('must be between 8 and 128 characters')
     getpasswordLength()
+    console.log(length)
   }
-  return length 
-
-   // if password length is between 8 and 128 characters
-   if (promptgetpasswordLength < 8 || promptgetpasswordLength > 128) {
-    // confirm character length between 8 and 128 characters
-    var confirm = window.confirm("Character Length of password is between 8 and 128 characters?");
-}
-  console.log(getpasswordLength()) 
+  
 
 
-function getpasswordOptions(){
+// function getpasswordOptions(){
   // Use confirms to individually ask upper case, lower case, numbers, special characters. These need to be stored as their own variables.
   
   // Upper case letter prompt
@@ -39,7 +38,7 @@ function getpasswordOptions(){
 
     if (// leter is not uppercase){
       alert('must be a upper case letter!')
-      getuppercaseLetter(){
+      getuppercaseLetter()
     }
     return uppercaseLetter
 
